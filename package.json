@@ -1,0 +1,79 @@
+{
+  "name": "lonely-island-note-pure-apk",
+  "displayName": "孤岛笔记",
+  "version": "1.0.0",
+  "description": "A note app built by Cordova+jQuery",
+  "main": "index.js",
+  "scripts": {
+    "add-android": "cordova platform add android",
+    "add-browser": "cordova platform add browser",
+    "run-android": "cordova run android",
+    "debug": "cordova run browser",
+    "device": "cordova run android --device",
+    "build": "cordova build"
+  },
+  "keywords": [
+    "ecosystem:cordova"
+  ],
+  "author": "linxiaozhou.com",
+  "license": "Apache-2.0",
+  "dependencies": {
+    "cordova-browser": "^6.0.0"
+  },
+  "devDependencies": {
+    "cordova-android": "^8.1.0",
+    "cordova-clipboard": "^1.3.0",
+    "cordova-plugin-aes256-encryption": "^2.0.1",
+    "cordova-plugin-android-fingerprint-auth": "^1.5.0",
+    "cordova-plugin-app-version": "^0.1.13",
+    "cordova-plugin-dialogs": "^2.0.2",
+    "cordova-plugin-file": "^6.0.2",
+    "cordova-plugin-file-encryption": "^1.0.6",
+    "cordova-plugin-file-opener2": "^3.0.5",
+    "cordova-plugin-file-transfer": "^1.7.1",
+    "cordova-plugin-geolocation": "^4.1.0",
+    "cordova-plugin-mediapicker-dmcsdk": "github:DmcSDK/cordova-plugin-mediaPicker",
+    "cordova-plugin-qrscanner": "^3.0.1",
+    "cordova-plugin-statusbar": "^3.0.0",
+    "cordova-plugin-vibration": "^3.1.1",
+    "cordova-plugin-whitelist": "^1.3.5",
+    "cordova-zip-plugin": "^2.0.0",
+    "eslint": "^7.6.0",
+    "eslint-plugin-import": "^2.20.0",
+    "ionic-plugin-keyboard": "^2.2.1",
+    "prettier": "^2.4.1",
+    "prettier-config-bridge5": "^3.0.0"
+  },
+  "cordova": {
+    "plugins": {
+      "cordova-plugin-whitelist": {},
+      "cordova-plugin-statusbar": {},
+      "cordova-plugin-file": {},
+      "cordova-plugin-qrscanner": {},
+      "com.jjdltc.cordova.plugin.zip": {},
+      "cordova-plugin-file-encryption": {},
+      "cordova-plugin-file-transfer": {},
+      "cordova-plugin-file-opener2": {
+        "ANDROID_SUPPORT_V4_VERSION": "27.+"
+      },
+      "cordova-plugin-aes256-encryption": {},
+      "cordova-plugin-dialogs": {},
+      "cordova-plugin-app-version": {},
+      "ionic-plugin-keyboard": {},
+      "cordova-plugin-geolocation": {
+        "GPS_REQUIRED": "false"
+      },
+      "cordova-plugin-mediapicker-dmcsdk": {
+        "IOS_PHOTO_LIBRARY_USAGE_DESCRIPTION": "LIN"
+      },
+      "cordova-plugin-android-fingerprint-auth": {},
+      "cordova-plugin-vibration": {},
+      "cordova-clipboard": {},
+      "cordova-sqlite-storage": {}
+    },
+    "platforms": [
+      "browser",
+      "android"
+    ]
+  }
+}
